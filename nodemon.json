@@ -1,0 +1,8 @@
+{
+    "env": {
+        "PORT": 8000,
+        "MONGO_USER_NAME": "**************",
+        "MONGO_PASSWORD": "***************************",
+        "JWT_KEY": "jwt_key"
+    }
+}
