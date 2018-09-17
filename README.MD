@@ -1,6 +1,6 @@
 #SAMPLE REST API USING NODE JS & EXPRESS JS & MONGODB
 
-#If You Want To Test My API Yourselft You Have To Change Some Security Option like the following
+#If You Want To Test My API Yourself You Have To Change Some Security Option like the following
 
 #step-1
 # you want to create your own database.

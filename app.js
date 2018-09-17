@@ -12,16 +12,8 @@ mongoose.Promise = global.Promise;
 
 app.use(morgan('dev'));
 
-
 app.use(body_parser.json());
 app.use(body_parser.urlencoded({ extended: false }));
-
-app.use('/user/signup', require('./routes/signup'));
-app.use('/user/login', require('./routes/login'));
-app.use('/user/courses', require('./routes/course'));
-app.use('/user/students', require('./routes/student'));
-
-
 
 //HANDLING CORS ERRORS---------------------------------------------------------->
 app.use((req, res, next) => {
@@ -35,6 +27,11 @@ app.use((req, res, next) => {
     next();
 });
 
+app.use('/user/signup', require('./routes/signup'));
+app.use('/user/login', require('./routes/login'));
+
+app.use('/user/courses', require('./routes/course'));
+app.use('/user/students', require('./routes/student'));
 
 //HANDLING ERRORS------------------------------------------------------------------->
 app.use((req, res, next) => {
